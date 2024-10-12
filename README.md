@@ -173,6 +173,8 @@ scarb cairo-run
 
 # Cairo & Starknet contracts
 
+STARK is a proof system. It uses cutting-edge cryptography to provide polylogarithmic verification resources and proof size, with minimal and post-quantum-secure assumptions.
+
 Starknet contracts are programs specifically designed to run within the Starknet OS. The Starknet OS is a Cairo program itself, which means that any operation executed by the Starknet OS can be proven and succinctly verified.
 
 ## Notes 
