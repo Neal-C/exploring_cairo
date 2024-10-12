@@ -118,11 +118,39 @@ All arithmetic operations can be done perfectly over finite fields.
 
 ## Instructions
 
-Requirements: Cairo toolchain >= 2.8.4 with Sierra >= 1.6.0
+Requirements: Docker or Rust toolchain >=1.80.0 + Cairo toolchain >= 2.8.4 with Sierra >= 1.6.0
+
+
+#### With Docker
+
+clone my repository
+
+```shell
+git clone git@github.com:Neal-C/exploring_cairo.git
+cd exploring_cairo
+```
+
+build and run with Docker
+
+```shell
+docker build -t neal-c-cairo:latest .
+```
+
+```shell
+docker run --name neal-c-cairo neal-c-cairo:latest
+```
+
 
 ### With local install
 
-Requirements: Cairo toolchain >= 2.8.4 with Sierra >= 1.6.0
+Requirements: Rust toolchain >=1.80.0, Cairo toolchain >= 2.8.4 with Sierra >= 1.6.0
+
+clone my repository
+
+```shell
+git clone git@github.com:Neal-C/exploring_cairo.git
+cd exploring_cairo
+```
 
 build:  
 ```bash
@@ -132,6 +160,15 @@ scarb build
 test:  
 ```bash
 scarb test
+```
+
+run:  
+```bash
+cd flex_cairo
+```
+
+```bash
+scarb cairo-run
 ```
 
 # Cairo & Starknet contracts
